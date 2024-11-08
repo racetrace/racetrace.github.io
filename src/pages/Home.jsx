@@ -20,7 +20,7 @@ export default function Home() {
 
   return (
       <main>
-        {auth.error && <ErrorMessage title='Error' message={auth.error.message} />}
+        {auth.error && <div className="m-5"><ErrorMessage title='Error' message={auth.error.message} /></div>}
         <div className="font-[family-name:var(--font-geist-sans)]">
         <section className="w-full grid grid-rows-1 grid-cols-1">
             <ScrollingBackground className="row-start-1 col-start-1" />
